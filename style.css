@@ -1,22 +1,78 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Body Style */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
+  background: #f4faff;
+  display: flex;
+  justify-content: center;
   padding: 20px;
 }
+
+/* Mobile container */
 .container {
+  width: 375px;
   background: white;
+  border-radius: 30px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+/* Header */
+.header {
+  background: #d7eaff;
   padding: 20px;
-  max-width: 600px;
-  margin: auto;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-#optionsBox button {
-  display: block;
-  margin: 5px 0;
-}
-#timerBox {
-  text-align: right;
+  text-align: center;
+  font-size: 24px;
   font-weight: bold;
+  color: #1b2c40;
+  position: relative;
+}
+
+/* Subject card */
+.subject-card {
+  background: #eef7ff;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 15px 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.subject-card h3 {
+  font-size: 18px;
+  color: #1b2c40;
   margin-bottom: 10px;
 }
+
+.chapter-list {
+  margin-left: 10px;
+  color: #333;
+  line-height: 1.8;
+}
+
+.see-all {
+  margin-top: 5px;
+  color: #007bff;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Quiz Test Button */
+.quiz-button {
+  background: #ff7a2f;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin: 30px 20px;
+  padding: 15px;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+}
+
